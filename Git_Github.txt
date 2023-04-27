@@ -1,0 +1,73 @@
+Git y Github 11-05-2022
+Comandos basicos
+
+git ini  = Nos permite indicar que se va a crear un proyecto nuevo
+git add <file> = permite pasar los archivos de working directory a staging area
+git status = permite ver en que estado estàn los archivos
+git commit = permite pasar los archivos de staging area al repositorio
+git push= Sirve para subir a un escritorio remoto, ejemplo subir los archivos a un servidor lo cual otros desarrolladores que tienen permiso podrán verlo
+git pull = este comando trae los cambios que han hecho otros desarrolladores
+git clone = permite crear una copia desde donde está el proyecto a la computadora
+
+
+Ejemplo   
+            ---      working directory  (lugar donde se trabaja con todos los archivos
+             git add
+            ---       staging area   ---  (lugar donde se van agregando todos los archivos o preparando todos los archivos para el guardado)
+                                      git commit
+                       repository    --- (Cuando estàn listo para ser guardados los archivos, estos son almacenados en el repositorio)
+
+
+Ingresar a la 
+https://git-scm.com/downloads
+Tambien se encuentra en el repositorio de github
+repositorio fuente de Git está en GitHub.
+
+Al descargar .exe, se ejecutar, siguiente (la configuraciòn viene predeterminada), cunado se llega a la opción de:
+
+Adjusting your Path enviroment se debe seleccionar "" Use Git and optional Unix tools from the Windows Command Prompt. ""
+
+Si  digitamos el comado:
+ .- ls este nos lista el directorio
+ .- pwd nos muestra en que directorio estamos /c/Users/Yaleni Gomez
+ .- git --version   git version 2.36.1.windows.1
+ .- mkdir crea carpeta
+ .--cd cambia de directorio
+
+
+Crear carpeta Git
+Ahora, vamos a crear una nueva carpeta para nuestro proyecto:
+
+Configurar Git
+Ahora dile a Git quién eres. Esto es importante para los sistemas de control de versiones, ya que cada confirmación de Git utiliza esta información 
+
+git config --global user.name   git config --global user.name "Yaleni Gomez"
+git config --global user.email git config --global user.email yaleni.gomez@usach.cl
+git config --global core.editor "code --wait"  (configura el ditor de texto para este caso el visual estudio code)
+para revisar la configuración git config --global -e
+git config --global core.autocrfl True
+(personas que trabajan en el repositorio pero desde windows(caracteres especiales CR=carrier return y LF=Line feed o Linux/Mac  caracter especial LF) 
+si estamos en windows debemos dejar su valor en True para Linux/Mac el valor es input
+
+
+code . (abre el visual code donde se encuentra el proyecto)
+*______________________________________________________
+
+Crear carpeta Git
+crear una nueva carpeta para nuestro proyecto:
+
+Ejemplo
+    mkdir myproject1
+    cd myproject1
+*____________________________________________________________
+
+Inicializar Git
+ git ini
+
+
+
+
+
+
+
+
